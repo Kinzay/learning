@@ -11,7 +11,7 @@ class Triangle(Figure):
                 or not isinstance(side_c, (int, float)) or any(True for side in [side_a, side_b, side_c] if side <= 0)):
             raise ValueError("Стороны задаются целыми или дробными числами (int, float) и должны быть больше 0")
 
-        if not (side_a <= side_b + side_c and side_b <= side_c + side_a and side_c <= side_a + side_b):
+        if not (side_a < side_b + side_c and side_b < side_c + side_a and side_c < side_a + side_b):
             raise ValueError("При заданных сторонах треугольник не существует")
 
     def get_area(self) -> int | float:
