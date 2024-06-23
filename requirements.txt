@@ -1,0 +1,6 @@
+pip~=24.0
+attrs~=23.1.0
+pytest~=8.2.1
+python-dotenv~=1.0.1
+pydantic~=2.7.4
+requests~=2.32.3
